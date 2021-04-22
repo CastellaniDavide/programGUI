@@ -3,7 +3,7 @@
 import PySimpleGUI as sg
 
 __author__ = "help@castellanidavide.it"
-__version__ = "01.02 2021-04-22"
+__version__ = "01.03 2021-04-22"
 
 class programGUI:
 	def __init__ ( self, 
@@ -22,8 +22,7 @@ class programGUI:
 			for elem in col:
 				if elem["type"] == "bool":
 					temp.append([sg.Text(elem["title"])])
-					temp.append([sg.Radio(elem["id"], 1, key=elem["id"])])
-					temp.append([sg.Radio("not " + elem["id"], 1, key="not " + elem["id"])])
+					temp.append([sg.Checkbox(elem["title"], default=False,key=elem["id"])])
 				elif elem["type"] == "text":
 					temp.append([sg.Text(elem["title"])])
 					temp.append([sg.InputText(key=elem["id"])])
