@@ -1,8 +1,9 @@
 """programGUI
 """
+import PySimpleGUI as sg
 
 __author__ = "help@castellanidavide.it"
-__version__ = "01.01 2021-04-22"
+__version__ = "01.02 2021-04-22"
 
 class programGUI:
 	def __init__ ( self, 
