@@ -22,7 +22,7 @@ class programGUI:
 			for elem in col:
 				if elem["type"] == "bool":
 					temp.append([sg.Text(elem["title"])])
-					temp.append([sg.Checkbox(elem["title"], default=False,key=elem["id"])])
+					temp.append([sg.Checkbox(elem["id"], default=False,key=elem["id"])])
 				elif elem["type"] == "text":
 					temp.append([sg.Text(elem["title"])])
 					temp.append([sg.InputText(key=elem["id"])])
